@@ -8,6 +8,7 @@ const PORT = process.env.PORT || 8081;
 let accounts;
 server.listen(PORT, function(err, blockchain) {
     console.log('Listening on ', PORT);
+    accounts = blockchain.accounts;
 });
 
  
